@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuoi Sposarmi?</title>
+    <style>
+        body {
+            font-family: Comic Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            background-color: #f7e8e8;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        h1 {
+            color: #ec8712;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        button {
+            background-color: #1ec51e;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #279212;
+        }
+        .message {
+            font-size: 2em;
+            color: #3c920b;
+            margin-top: 50px;
+        }
+        .proposal-image {
+            width: 500px;  
+            height: auto;  
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showMessage(answer) {
+            var messageElement = document.getElementById("message");
+            if (answer === 'yes') {
+                messageElement.textContent = "Ti amo pì, viaggio di nozze in Giappone!";
+            } else {
+                messageElement.textContent = "E così non mi ami più?";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Vuoi Sposarmi?</h1>
+    <p>Ciao piccolino, grazie per sopportarmi ogni giorno, mi chiedevo se ti andasse di sopportarmi fino alla fine dei nostri giorni...</p>
+    
+    <div class="buttons">
+        <button onclick="showMessage('yes')">Sì, lo voglio!</button>
+        <button onclick="showMessage('no')">No, mi dispiace...</button>
+    </div>
+    
+    <div id="message" class="message"></div>
+</body>
+</html>
+
+
+<img src="c:\Users\User\Documents\wymm\5dedb870-9052-4ebd-9a83-d0b95fc133b6.jpg" alt="Anello di Fidanzamento" class="proposal-image">
+
+
+
+    <div id="message" class="message"></div>
+</body>
+</html>
